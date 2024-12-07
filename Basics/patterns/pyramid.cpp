@@ -3,16 +3,22 @@ using namespace std;
 
 int main()
 {
-    int i,j,k,n=5;
-    for (i=1;i<=n;i++)
+    int row;
+    cout << "Enter the number of rows:";
+    cin >> row;
+    for (int i=1;i<=row;i++)
     {
-        for(j=1;j<=(n-i)/2;j++)
+        for(int j=1;j<=row-i;j++)
         {
             cout << " "; 
         }
-        for(k=1;k<=i;k++)
+        for(int j=1;j<=i;j++)
         {
-            cout << i;
+            cout << j;
+        }
+        for(int j=i-1;j>=1;j--)
+        {
+            cout << j;
         }
     cout << "\n";
     }    
