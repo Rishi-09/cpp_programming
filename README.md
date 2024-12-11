@@ -1,35 +1,8 @@
 # cpp_programming
 my cpp programming journey!
 
-this repo will contain :
-C++-Learning-Path/
-├── Basic/
-│   ├── Getting_Started/
-│   ├── Syntax/
-│   ├── Functions/
-│   ├── Arrays_and_Pointers/
-│   └── File_Handling/
-├── Intermediate/
-│   ├── OOP/
-│   ├── STL/
-│   ├── Dynamic_Memory/
-│   ├── Templates/
-│   └── Exceptions/
-├── Expert/
-│   ├── Advanced_OOP/
-│   ├── Concurrency/
-│   ├── Metaprogramming/
-│   ├── Modern_C++/
-│   ├── Design_Patterns/
-│   └── Optimization/
-
 A detailed view --
 This section focuses on fundamental concepts and introductory topics that lay the groundwork for understanding and using C++ effectively.
-
-    Setup and Basics:
-        Installing a C++ compiler and IDE.
-        "Hello, World!" program.
-        Input/Output (cin, cout).
 
     Core Syntax:
         Variables and Data Types (int, float, char, etc.).
