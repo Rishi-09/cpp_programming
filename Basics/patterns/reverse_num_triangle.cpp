@@ -1,9 +1,9 @@
 /*
 
-1 
-2 1 
-3 2 1 
-4 3 2 1 
+1
+2 1
+3 2 1
+4 3 2 1
 
 */
 
@@ -12,14 +12,15 @@ using namespace std;
 
 int main()
 {
-    int row ;
+    int row;
     cout << "Enter the number of rows :";
     cin >> row;
-    for(int i=1;i<=row;i++)
+    // row
+    for (int i = 1; i <= row; i++)
     {
-        for (int j=i;j>=1;j--)
-        {
-            cout << j<< " ";
+        for (int j = i; j >= 1; j--)
+        { // column
+            cout << j << " ";
         }
         cout << endl;
     }

@@ -1,3 +1,12 @@
+/*
+    1
+   121
+  12321
+ 1234321
+123454321
+
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -6,21 +15,22 @@ int main()
     int row;
     cout << "Enter the number of rows:";
     cin >> row;
-    for (int i=1;i<=row;i++)
-    {
-        for(int j=1;j<=row-i;j++)
+    for (int i = 1; i <= row; i++)
+    {   // spaces
+        for (int j = 1; j <= row - i; j++)
         {
-            cout << " "; 
+            cout << " ";
         }
-        for(int j=1;j<=i;j++)
-        {
-            cout << j;
-        }
-        for(int j=i-1;j>=1;j--)
+        // half numbers
+        for (int j = 1; j <= i; j++)
         {
             cout << j;
         }
-    cout << "\n";
-    }    
+        // remaining numbers
+        for (int j = i - 1; j >= 1; j--)
+        {
+            cout << j;
+        }
+        cout << "\n";
+    }
 }
-

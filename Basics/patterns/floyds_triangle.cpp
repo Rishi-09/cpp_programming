@@ -1,18 +1,27 @@
+/*
+
+1
+23
+456
+78910
+1112131415
+
+*/
 #include <iostream>
 using namespace std;
 int main()
 {
-    int row,count=1;
+    int row, count = 1;
     cout << "Enter the Number of Rows :";
     cin >> row;
-    for (int i=0;i<row;i++)
-    {
-        for(int j=0;j<=i;j++)
+    // row
+    for (int i = 0; i < row; i++)
+    { // column
+        for (int j = 0; j <= i; j++)
         {
             cout << count;
             count++;
         }
         cout << endl;
     }
-
 }
