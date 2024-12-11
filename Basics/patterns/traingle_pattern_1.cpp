@@ -1,9 +1,9 @@
-/* row = 4
+/*  row = 4
     *
     * *
     * * *
-    * * * *
-*\
+    * * * * */
+
 
 #include <iostream>
 using namespace std;

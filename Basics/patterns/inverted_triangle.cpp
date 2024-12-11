@@ -1,3 +1,10 @@
+/*
+ 1111
+  222
+   33
+    4
+*/
+
 #include <iostream>
 using namespace std;
 int main()
@@ -12,7 +19,7 @@ int main()
         }
         for(int k=row;k>=i;k--)
         {
-            cout << i ;
+            cout << i;
         }
         
         cout << endl ;
