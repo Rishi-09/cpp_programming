@@ -25,7 +25,7 @@ This section focuses on fundamental concepts and introductory topics that lay th
     File Handling:
         Reading and writing to files using fstream.
 
-        Intermediate
+Intermediate
 
 This section involves more advanced syntax, concepts, and the standard library to solve real-world problems.
 
@@ -60,7 +60,7 @@ This section involves more advanced syntax, concepts, and the standard library t
     Namespaces:
         Defining and using namespaces.
 
-        Expert
+Expert
 
 This section delves into complex, high-performance, and cutting-edge features and techniques.
 
