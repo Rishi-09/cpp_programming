@@ -16,4 +16,5 @@ int main()
     cout << "Enter the number to Calculate Factorial :";
     cin >> num;
     cout << "The Factorial of " << num << " is :" << fact(num) << endl;
+    eeturn 0;
 }
