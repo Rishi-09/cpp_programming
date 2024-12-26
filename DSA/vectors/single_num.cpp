@@ -19,8 +19,8 @@ int main()
 	for ( int i =0 ; i< n ;i++)
 	{	cout << "Enter Element at index " << i << " : " ;
 		int val;
-		//cin >> val;
-		arr.push_back( cin >>  val);
+		cin >> val;
+		arr.push_back(val);
 		
 	}
 	cout << "Entered Array :";
