@@ -4,9 +4,11 @@ void rev_arr(int arr[],int size)
 {
 	int left = 0;
 	int right = size-1;
-	for(int i =0;i < size/2;i++)
+	while(left<=right)
 	{
-	  swap(arr[i],arr[size-i]);
+	  swap(arr[left],arr[right]);
+	  left++;
+	  right--;
 	  
 	}
 }
@@ -16,23 +18,23 @@ int main()
 	cout << "Enter the Number of elements : ";
 	cin >> n;
 	int arr[n];
-	cout << "Enter Elements :";
 	for ( int i =0 ; i< n ;i++)
-	{
+	{	cout << "Enter Element at index " << i << " : " ;
 		cin >> arr[i];
 		
 	}
+	cout << " Entered Array : ";
 	for ( int i =0 ; i< n ;i++)
 	{
-		cout << arr[i];
+		cout << arr[i] <<  " ";
 		
-	}
-		
-	cout << "Reversed Array :";
+	}	
+	cout << endl;
+	cout << "Reversed Array : ";
 	rev_arr(arr,n);
 	for (int i =0 ; i< n ;i++)
 	{
-		cout << arr[i]<< "\t";
+		cout << arr[i]<< " ";
 		
 	}
 	cout << endl;
