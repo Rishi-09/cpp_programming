@@ -4,7 +4,7 @@ using namespace std;
 int Majority_event(vector<int> &arr)
 {
     int count = 0, ans = arr[0];
-    for (int i = 0; i < arr.size(); i++)
+    for (int i :arr)
     {
         if (count == 0)
             ans = arr[i];
@@ -13,7 +13,16 @@ int Majority_event(vector<int> &arr)
         else
             count--;
     }
-    return ans;
+    int c = 0;
+    for(int i : arr)
+    {
+        if (ans == arr[i])
+            c++;
+    }
+    if (c>arr.size()/2)
+        return ans;
+    else
+        return -1;
 }
 int main()
 {
@@ -28,5 +37,8 @@ int main()
         cin >> val;
         arr.push_back(val);
     }
-    cout << "Most occuring element is : " << Majority_event(arr) << endl;
+    if(Majority_event(arr)==-1)
+        cout << "No element is occuring more than once .";
+    else
+        cout << "Most occuring element is : " << Majority_event(arr) << endl;
 }
