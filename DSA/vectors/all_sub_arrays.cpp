@@ -3,10 +3,20 @@ using namespace std;
 #include <vector>
 int main()
 {
-    vector<int> arr = {2,3,6,2,8,4};
-    for(int i = 0 ; i < arr.size() ; i++)
+    vector<int> arr ;
+    int size;
+    cout << "Enter number of elements in array : ";
+    cin >> size;
+    for (int i = 0 ; i < size;i++)
     {
-        for(int j= i ; j < arr.size() ; j++)
+        int val;
+        cout << "Enter element at index " << i << " :";
+        cin >> val;
+        arr.push_back(val);
+    }
+    for(int i = 0 ; i < size ; i++)
+    {
+        for(int j= i ; j < size ; j++)
         {
             for(int k = i ; k <=j;k++)
             {
