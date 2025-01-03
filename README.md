@@ -1,5 +1,5 @@
 # cpp_programming
-my cpp programming journey!
+my aim in cpp programming journey!
 
 A detailed view --
 This section focuses on fundamental concepts and introductory topics that lay the groundwork for understanding and using C++ effectively.
