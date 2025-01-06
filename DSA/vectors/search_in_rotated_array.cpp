@@ -9,12 +9,22 @@ int search_in_rotated_array(vector<int> &nums, int target)
         mid = left + (right - left) / 2;
         if (target == nums[mid])
             return mid;
-        else if (target > nums[left] && target < nums[mid])
-            right = mid - 1;
+        if (nums[left] <= nums[mid])
+        {
+            if (nums[left] <= target && target <= nums[mid])
+                right = mid - 1;
+            else
+                left = mid + 1;
+        }
         else
-            left = mid + 1;
+        {
+            if (nums[mid] <= target && target <= nums[right])
+                left = mid + 1;
+            else
+                right = mid - 1;
+        }
     }
-    return -1;
+    return -1; 
 }
 int main()
 {
@@ -30,12 +40,12 @@ int main()
         arr.push_back(val);
     }
     int target;
-    cout << "Enter element to search :" ;
+    cout << "Enter element to search :";
     cin >> target;
-    int res = search_in_rotated_array(arr,target);
-    if(res==-1)
+    int res = search_in_rotated_array(arr, target);
+    if (res == -1)
         cout << "Element not found ." << endl;
     else
-        cout << "Element found at index " << res << endl ;
+        cout << "Element found at index " << res << endl;
     return 0;
 }
