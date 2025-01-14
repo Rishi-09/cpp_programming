@@ -3,7 +3,7 @@
 using namespace std;
 int bin_search(vector<int> &nums, int target)
 {
-    int left = 0, right = nums.size() - 1, mid;
+    int left  = 0, right = nums.size() - 1, mid;
     while (left <= right)
     {
         mid = left + (right - left) / 2;
