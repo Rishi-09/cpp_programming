@@ -44,8 +44,17 @@ int PainterPartition(vector <int>& arr,int m)
 int main()
 {
 	vector <int> arr;
-	arr = {40,30,10,20};
 	int m;
+	int size;
+    cout << "Enter number of elements in array : ";
+    cin >> size;
+    for (int i = 0; i < size; i++)
+    {
+        int val;
+        cout << "Enter element at index " << i << " :";
+        cin >> val;
+        arr.push_back(val);
+    }
 	cout << "Enter the number of painters :";
 	cin >> m;
 	cout << PainterPartition(arr,m) << endl;
