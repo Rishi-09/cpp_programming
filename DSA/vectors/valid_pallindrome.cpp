@@ -32,8 +32,6 @@ bool isPalindrome(string s)
         
         if (tolower(s[start]) != tolower(s[end]))
             return false;
-        cout << start << endl;
-        cout << end << endl;
         start++;
         end--;
     }
