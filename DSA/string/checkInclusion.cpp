@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 bool isFreqSame(int arr1[], int arr2[])

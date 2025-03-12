@@ -1,13 +1,26 @@
 #include <iostream>
+#include <string>
 using namespace std;
 string reverseWords(string s)
 {
     reverse(s.begin(), s.end());
-    return s;
-}
-int main()
-{
-    cout << reverseWords("abc") << endl;
+        string ans = "";
+        for (int i = 0; i < s.length(); i++) {
+            string word = "";
+            while (i < s.length() && s[i] != ' ') {
+                word += s[i];
+                i++;
+            }
+            reverse(word.begin(), word.end());
+            if (word.length()>0)
+            ans += " " + word;
+        }
+        return ans.substr(1);
+    }
 
+int main()
+{   
+    string s="   world hello";
+    cout << reverseWords(s) << endl;
     return 0;
 }
